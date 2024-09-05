@@ -21,10 +21,10 @@ const Arvuta = () => {
 const KoguInfo = () =>{
     rl.question(`Nimi: `, nimi => {
         Nimi = nimi
-        rl.question(`Lubatud Kiirus: `, lubatudk => {
-            LubatudKiirus = lubatudk
-            rl.question(`Tegelik Kiirus: `, tegelikk => {
-                TegelikKiirus = tegelikk
+        rl.question(`Lubatud Kiirus: `, k => {
+            LubatudKiirus = lk
+            rl.question(`Tegelik Kiirus: `, tk => {
+                TegelikKiirus = tk
                 console.log(`${Nimi}, kiiruse ületamise eest on teie trahv ${Arvuta()} eurot.`)
                 rl.close()
             });
